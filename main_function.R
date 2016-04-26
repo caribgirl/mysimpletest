@@ -23,5 +23,5 @@ data <- GetData("gbtestcluster.ctwefsfzej2f.us-west-2.redshift.amazonaws.com",
                 "5439","mydb", "gbuser", "M0nde11e$")
 
 summary <- data[,list(total=length(source)), by=list(nickname, auth_id)]
-write.table(summary, file=paste(getwd(), "/summary.csv", sep=""), sep="|", col.names = FALSE, fileEncoding = "UTF-8")
+write.table(summary, file=paste(getwd(), "/mysummary2.csv", sep=""), sep="|", col.names = FALSE, fileEncoding = "UTF-8")
 
